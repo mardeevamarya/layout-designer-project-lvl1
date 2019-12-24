@@ -9,6 +9,7 @@ button:active,
 button:focus {
     outline: none;
 }
+/* header */
 
 .header {
 	display: flex;
@@ -19,22 +20,22 @@ button:focus {
 	padding-bottom: 15px;
 }
 
-.logo {
+.header__logo {
 	display: flex;
 	align-items: center;
 	flex-grow: 15;
 }
 
-.logo img {
+.header__logo img {
 	margin-right: 15px;
 }
 
-.menu  {
+.header__menu  {
 	display: flex;
 	flex-grow: 1;
 }
 
-.menu ul {
+.header__menu ul {
 	display: flex;
 	list-style: none;
 	width: 100%;
@@ -43,26 +44,24 @@ button:focus {
 	padding: 0;
 }
 
-.menu ul li a{
+.header__menu ul li a{
 	text-decoration: none;
 	color: black;
 }
 
-.reserv {
+/* main - reserv*/
+
+.reserv__wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	background-image: url(../images/banner.png);
 	background-position: center;
 	height: 400px;
 }
 
-.reserv-wrapper {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	height: 100%;
-}
-
-.reserv-wrapper a{
+.reserv__wrapper a{
 	width: 150px;
 	color: #fff;
 	background-color: transparent;
@@ -74,129 +73,127 @@ button:focus {
 	text-decoration: none;
 }
 
-.reserv-wrapper .reserv-title {
+.reserv__wrapper_title {
 	color: #fff;
 	font-size: 42px;
 	margin-bottom: 10px;
 }
 
-.reserv-wrapper .reserv-subtitle {
+.reserv__wrapper_subtitle {
 	color: #fff;
 	font-size: 24px;
 	margin-bottom: 10px;
 }
 
-.advantages {
+/* main - advantages*/
+
+.advantages__wrapper {
 	padding-left: 100px;
 	padding-right: 100px;
 	padding-top: 50px;
 	padding-bottom: 50px;
-}
-
-.advantages-wrapper {
 	display: flex;
 	justify-content: space-between;
 }
 
-.advantages-wrapper-unic, .advantages-wrapper-infr, .advantages-wrapper-proximity {
+.advantages__wrapper_unic, .advantages__wrapper_info, .advantages__wrapper_proximity {
 	width: 25%;
 }
 
-.advantages-wrapper-unic-title, .advantages-wrapper-infr-title, .advantages-wrapper-proximity-title {
+.advantages__wrapper_unic_title, .advantages__wrapper_info_title, .advantages__wrapper_proximity_title {
 	font-size: 30px;
 	padding-bottom: 10px;
 }
 
-.about {
+/* main - about*/
+
+.about__wrapper {
+	display: flex;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	justify-content: center;
 	background-color: #F5F5F5;
 	padding-left: 250px;
 	padding-right: 250px;
 }
 
-.about-wrapper {
-	display: flex;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	justify-content: center;
-}
-
-.about-wrapper-descr {
+.about__wrapper_descr {
 	width: 50%;
 }
 
-.about-wrapper-img {
+.about__wrapper_img {
 	width: 50%;
 }
 
-.about-wrapper-img {
+.about__wrapper_img {
 	display: flex;
 	justify-content: flex-end;
 }
 
-.about-wrapper-img img {
+.about__wrapper_img img {
 	width: 70%;
 }
 
-.about-wrapper-descr-title {
+.about__wrapper_descr_title {
 	font-size: 30px;
 	font-weight: bold;
 }
 
-.about-wrapper-descr {
+.about__wrapper_descr {
 	display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.places-wrapper {
+/* main - places*/
+
+.places__wrapper {
 	display: flex;
 	padding-top: 50px;
 	padding-bottom: 50px;
 	justify-content: center;
-}
-.places {
 	padding-left: 250px;
 	padding-right: 250px;
 }
 
-.places-wrapper-descr, .places-wrapper-img {
+.places__wrapper_descr, .places__wrapper_img {
 	width: 50%;
 }
 
-.places-wrapper-img {
+.places__wrapper_img {
 	display: flex;
 	justify-content: flex-start;
 }
 
-.places-wrapper-img img {
+.places__wrapper_img img {
 	width: 70%;
 }
 
-.places-wrapper-descr-title {
+.places__wrapper_descr_title {
 	font-size: 30px;
 	font-weight: bold;
 }
 
-.places-wrapper-descr {
+.places__wrapper_descr {
 	display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.feedback {
-	background-color: #F5F5F5;
-	padding-top: 50px;
-	padding-bottom: 50px;
-}
+/* main - feedback*/
 
-.feedback p {
+.feedback__wrapper p {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
-.feedback-wrapper {
+.feedback__wrapper {
 	display: flex;
 	justify-content: center;
-	margin-bottom: 10px;
+	background-color: #F5F5F5;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	flex-direction: column;
+	align-items: center;
 }
 
 form {
@@ -204,69 +201,71 @@ form {
 	border-color: #bdecb6;
 }
 
-.rooms {
+.feedback__wrapper_flat_rooms {
 	display: flex;
 	color: #000;
 	justify-content: space-between;
 	align-items: center;
 }
 
-.feedback-wrapper fieldset {
+.feedback__wrapper fieldset {
 	color: #00FA9A;
 	border: 1px solid #00FA9A;
 	font-weight: bold;
 }
 
-.rooms option, .count-rooms option  {
-	width: 150px;
-}
-
-.rooms select, .count-rooms select{
+.feedback__wrapper_flat_rooms select, .feedback__wrapper_flat_count_rooms select{
 	border-radius: 5px;
 	border: 1px solid #DCDCDC;
 	height: 32px;
+	width: 150px;
 }
 
-.count-rooms {
+.feedback__wrapper_flat_count_rooms {
 	display: flex;
 	color: #000;
 	justify-content: space-between;
 	align-items: center;
 }
 
-.contact-us .name, .contact-us .phone, .contact-us .email{
+.feedback__wrapper_contact_us_name, .feedback__wrapper_contact_us_phone, .feedback__wrapper_contact_us_email{
 	display: flex;
 	justify-content: space-between;
 	color: #000;
 }
 
-.contact-us fieldset {
+.feedback__wrapper_contact_us fieldset {
 	color: #00FA9A;
 	border: 1px solid #00FA9A;
 	font-weight: bold;
 }
 
-.contact-us input {
+.feedback__wrapper_contact_us input {
 	width: 230px;
 	border-radius: 5px;
 	border: 1px solid #DCDCDC;
 	height: 28px;
 }
 
-.contact-us {
+.feedback__wrapper_contact_us {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 15px;
 }
 
-.feedback-subtitle {
+.feedback__wrapper_subtitle {
 	font-size: 30px;
 	font-weight: bold;
 	text-align: center;
 	margin-bottom: 20px;
 }
 
-.feedback-btn a {
+.feedback__wrapper_flat {
+	margin-bottom: 15px;
+}
+
+.feedback__btn a {
 	width: 150px;
 	color: #00FA9A;
 	background-color: transparent;
@@ -279,6 +278,48 @@ form {
 	text-align: center;
 }
 
-.contact-us form {
+.feedback__wrapper_contact_us form {
 	margin-bottom: 10px;
+}
+
+/* footer */
+
+.footer__wrapper_logo_name img {
+	width: 60px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+}
+
+.footer__wrapper_logo_name {
+	display: flex;
+	align-items: center;
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    color: #fff;
+    background-color: #696969;
+}
+
+.footer__wrapper_documentation_title {
+	font-size: 20px;
+}
+
+.footer__wrapper_documentation a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.footer__wrapper_about_company_title {
+	font-size: 20px;
+}
+
+.footer__wrapper_about_company a {
+	color: #fff;
+	text-decoration: none;
 }
