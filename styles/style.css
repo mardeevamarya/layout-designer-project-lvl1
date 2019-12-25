@@ -11,31 +11,35 @@ button:focus {
 }
 /* header */
 
-.header {
+.header__wrapper {
 	display: flex;
 	justify-content: space-between;
 	padding-left: 25px;
 	padding-right: 25px;
 	padding-top: 15px;
 	padding-bottom: 15px;
+	position: fixed;
+	background-color: #fff;
+	left: 0;
+	right: 0;
 }
 
-.header__logo {
+.header__wrapper_logo {
 	display: flex;
 	align-items: center;
 	flex-grow: 15;
 }
 
-.header__logo img {
+.header__wrapper_logo img {
 	margin-right: 15px;
 }
 
-.header__menu  {
+.header__wrapper_menu  {
 	display: flex;
 	flex-grow: 1;
 }
 
-.header__menu ul {
+.header__wrapper_menu ul {
 	display: flex;
 	list-style: none;
 	width: 100%;
@@ -44,7 +48,7 @@ button:focus {
 	padding: 0;
 }
 
-.header__menu ul li a{
+.header__wrapper_menu ul li a{
 	text-decoration: none;
 	color: black;
 }
@@ -59,6 +63,7 @@ button:focus {
 	background-image: url(../images/banner.png);
 	background-position: center;
 	height: 400px;
+	padding-top: 81px;
 }
 
 .reserv__wrapper a{
@@ -88,12 +93,12 @@ button:focus {
 /* main - advantages*/
 
 .advantages__wrapper {
-	padding-left: 100px;
-	padding-right: 100px;
 	padding-top: 50px;
 	padding-bottom: 50px;
 	display: flex;
 	justify-content: space-between;
+	width: 1000px;
+	margin: 0 auto;
 }
 
 .advantages__wrapper_unic, .advantages__wrapper_info, .advantages__wrapper_proximity {
@@ -106,40 +111,43 @@ button:focus {
 }
 
 /* main - about*/
+.about__bg {
+	background-color: #F5F5F5;
+}
 
-.about__wrapper {
+
+.about__bg_wrapper {
 	display: flex;
 	padding-top: 50px;
 	padding-bottom: 50px;
 	justify-content: center;
-	background-color: #F5F5F5;
-	padding-left: 250px;
-	padding-right: 250px;
+	width: 1000px;
+	margin: 0 auto;
 }
 
-.about__wrapper_descr {
+.about__bg_wrapper_descr {
 	width: 50%;
 }
 
-.about__wrapper_img {
+.about__bg_wrapper_img {
 	width: 50%;
 }
 
-.about__wrapper_img {
+.about__bg_wrapper_img {
 	display: flex;
 	justify-content: flex-end;
 }
 
-.about__wrapper_img img {
+.about__bg_wrapper_img img {
 	width: 70%;
 }
 
-.about__wrapper_descr_title {
+.about__bg_wrapper_descr_title {
 	font-size: 30px;
 	font-weight: bold;
 }
 
-.about__wrapper_descr {
+.about__bg_wrapper_descr {
 	display: flex;
     flex-direction: column;
     justify-content: center;
@@ -152,8 +160,8 @@ button:focus {
 	padding-top: 50px;
 	padding-bottom: 50px;
 	justify-content: center;
-	padding-left: 250px;
-	padding-right: 250px;
+	width: 1000px;
+	margin: 0 auto;
 }
 
 .places__wrapper_descr, .places__wrapper_img {
