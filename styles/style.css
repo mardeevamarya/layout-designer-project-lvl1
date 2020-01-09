@@ -2,6 +2,7 @@
 html, body{
 	margin: 0;
 	padding: 0;
+	font-family: 'Open Sans', sans-serif
 }
 
 button, 
@@ -9,6 +10,11 @@ button:active,
 button:focus {
     outline: none;
 }
+
+.dflex {
+	display: flex;
+}
+
 /* header */
 
 header {
@@ -26,27 +32,21 @@ header {
 	padding-bottom: 15px;
 }
 
-.wrapper {
-	display: flex;
-}
-
-.header-logo {
-	display: flex;
+.logo {
 	align-items: center;
 	flex-grow: 15;
 }
 
-.header-logo img {
+.logo img {
 	margin-right: 15px;
+	height: 60px;
 }
 
 .header-menu  {
-	display: flex;
 	flex-grow: 1;
 }
 
 .header-menu ul {
-	display: flex;
 	list-style: none;
 	width: 100%;
 	justify-content: space-between;
@@ -76,16 +76,23 @@ main {
 	height: 400px;
 }
 
-.reserv-wrapper a{
+.btn {
 	width: 150px;
-	color: #fff;
 	background-color: transparent;
 	outline: none;
 	border: 1px solid #fff;
 	padding: 5px 10px;
 	border-radius: 5px;
 	text-align: center;
-	text-decoration: none;
+}
+
+.btn a {
+	color: #fff;
+	text-decoration: none;	
+}
+
+.reserv-wrapper img {
+	height: 150px;
 }
 
 .reserv-title {
@@ -111,11 +118,11 @@ main {
 	margin: 0 auto;
 }
 
-.advantages-unic, .advantages-info, .advantages-proximity {
+.advantages-text {
 	width: 25%;
 }
 
-.advantages-unic h3, .advantages-info h3, .advantages-proximity h3 {
+.advantages-text h2 {
 	font-size: 28px;
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -127,7 +134,7 @@ main {
 }
 
 
-.about-wrapper, .places-wrapper {
+.sect-wrapper {
 	padding-top: 50px;
 	padding-bottom: 50px;
 	justify-content: center;
@@ -135,7 +142,7 @@ main {
 	margin: 0 auto;
 }
 
-.about-descr, .places-descr {
+.descr-text {
 	width: 50%;
 	display: flex;
 	flex-direction: column;
@@ -143,23 +150,26 @@ main {
 
 }
 
-.about-descr h3, .places-descr h3 {
+.descr-text h2 {
 	margin-top: 0;
 	margin-bottom: 0;
 	font-size: 30px;
 	font-weight: bold;
 }
 
-.about-img, .places-img {
+.sect-img {
 	width: 50%;
-	display: flex;
 }
 
-.about-img {
+.sect-img-right {
 	justify-content: flex-end;
 }
 
-.about-img img, .places-img img {
+.sect-img-left {
+	justify-content: flex-start;
+}
+
+.sect-img img {
 	width: 70%;
 }
 
@@ -169,9 +179,13 @@ main {
 
 /* main - feedback*/
 
-.feedback-wrapper h3 {
+.feedback-blocks {
+	width: 450px;		
+}
+
+.feedback-wrapper h2 {
 	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 .feedback-wrapper {
 	justify-content: center;
@@ -187,100 +201,55 @@ form {
 	border-color: #bdecb6;
 }
 
-.feedback-rooms {
-	display: flex;
-	color: #000;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.feedback-wrapper fieldset {
+.feedback-blocks fieldset {
 	color: #00FA9A;
-	border: 1px solid #00FA9A;
+	border: 2px solid #00FA9A;
 	font-weight: bold;
+	margin-bottom: 12px;
 }
 
-.feedback-rooms select, .feedback-count-rooms select{
+.feedback-block {
+	align-items: center;
+	justify-content: space-between;
+}
+
+.feedback-descr select {
 	border-radius: 5px;
 	border: 1px solid #DCDCDC;
 	height: 32px;
-	width: 150px;
+	width: 200px;
 }
 
-.feedback-count-rooms {
-	display: flex;
+.feedback-title {
 	color: #000;
-	justify-content: space-between;
+}
+
+.feedback-str {
+	color: #000;
 	align-items: center;
-}
-
-.feedback-contact-name, .feedback-contact-phone, .feedback-contact-email{
-	display: flex;
 	justify-content: space-between;
-	color: #000;
 }
 
-.feedback-contact fieldset {
-	color: #00FA9A;
-	border: 1px solid #00FA9A;
-	font-weight: bold;
-}
-
-.feedback-contact input {
+.feedback-str input {
 	width: 230px;
 	border-radius: 5px;
 	border: 1px solid #DCDCDC;
 	height: 28px;
 }
 
-.feedback-contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 15px;
-}
+.feedback-btn {
 
-.feedback h3 {
-	font-size: 30px;
-	font-weight: bold;
-	text-align: center;
-	margin-bottom: 20px;
-	margin-top: 0;
-}
-
-.feedback-flat {
-	margin-bottom: 15px;
-}
-
-.feedback-btn a {
-	width: 150px;
-	color: #00FA9A;
-	background-color: transparent;
-	outline: none;
 	border: 1px solid #00FA9A;
 	padding: 5px 10px;
 	border-radius: 5px;
-	text-decoration: none;
-	display: block;
-	text-align: center;
 }
 
-.feedback-contact form {
-	margin-bottom: 10px;
+.feedback-btn a {
+	color: #00FA9A;	
 }
 
 /* footer */
 
-.footer-logo img {
-	width: 60px;
-	margin-right: 15px;
-	margin-bottom: 15px;
-}
-
-.footer-logo-wrap {
-	display: flex;
-	align-items: center;
-}
 
 .footer-wrapper {
     justify-content: space-around;
@@ -292,7 +261,7 @@ form {
     background-color: #696969;
 }
 
-.footer-documentation h3, .footer-about h3 {
+.footer-documentation h2, .footer-about h2 {
 	font-size: 20px;
 }
 
