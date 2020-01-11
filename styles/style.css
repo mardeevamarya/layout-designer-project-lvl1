@@ -11,6 +11,10 @@ button:focus {
     outline: none;
 }
 
+.white {
+	color: #fff;
+}
+
 .dflex {
 	display: flex;
 }
@@ -22,6 +26,11 @@ header {
 	background-color: #fff;
 	left: 0;
 	right: 0;
+	height: 95px;
+}
+
+.al-i-center {
+	align-items: center;
 }
 
 .header-wrapper {	
@@ -33,7 +42,6 @@ header {
 }
 
 .logo {
-	align-items: center;
 	flex-grow: 15;
 }
 
@@ -50,7 +58,6 @@ header {
 	list-style: none;
 	width: 100%;
 	justify-content: space-between;
-	align-items: center;
 	padding: 0;
 }
 
@@ -62,14 +69,17 @@ header {
 /* main */
 
 main {
-	padding-top: 81px;
+	padding-top: 95px;
+}
+
+.flex-dir-colm {
+	flex-direction: column;
 }
 
 /* main - reserv*/
 
 .reserv-wrapper {
 	flex-direction: column;
-	align-items: center;
 	justify-content: center;
 	background-image: url(../images/banner.png);
 	background-position: center;
@@ -87,7 +97,6 @@ main {
 }
 
 .btn a {
-	color: #fff;
 	text-decoration: none;	
 }
 
@@ -96,13 +105,11 @@ main {
 }
 
 .reserv-title {
-	color: #fff;
 	font-size: 42px;
 	margin-bottom: 0px;
 }
 
 .reserv-subtitle {
-	color: #fff;
 	font-size: 24px;
 	margin-bottom: 10px;
 	margin-top: 0px;
@@ -119,7 +126,7 @@ main {
 }
 
 .advantages-text {
-	width: 25%;
+	width: 30%;
 }
 
 .advantages-text h2 {
@@ -144,7 +151,6 @@ main {
 
 .descr-text {
 	width: 50%;
-	display: flex;
 	flex-direction: column;
 	justify-content: center;
 
@@ -178,6 +184,9 @@ main {
 }
 
 /* main - feedback*/
+.feedback-title {
+	color: #000;
+}
 
 .feedback-blocks {
 	width: 450px;		
@@ -193,7 +202,6 @@ main {
 	padding-top: 50px;
 	padding-bottom: 50px;
 	flex-direction: column;
-	align-items: center;
 }
 
 form {
@@ -209,7 +217,6 @@ form {
 }
 
 .feedback-block {
-	align-items: center;
 	justify-content: space-between;
 }
 
@@ -220,13 +227,9 @@ form {
 	width: 200px;
 }
 
-.feedback-title {
-	color: #000;
-}
 
 .feedback-str {
 	color: #000;
-	align-items: center;
 	justify-content: space-between;
 }
 
@@ -257,16 +260,14 @@ form {
     padding-right: 25px;
     padding-top: 45px;
     padding-bottom: 45px;
-    color: #fff;
     background-color: #696969;
 }
 
-.footer-documentation h2, .footer-about h2 {
+.footer-block h2 {
 	font-size: 20px;
 }
 
-.footer-documentation a, .footer-about a {
-	color: #fff;
+.footer-block a {
 	text-decoration: none;
 }
 
