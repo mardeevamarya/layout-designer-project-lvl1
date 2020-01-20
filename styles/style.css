@@ -1,6 +1,15 @@
 /* Basic */
+:root {
+  --main-color: #303846;
+  --main-font: 16px;
+  --header-height: 50px;
+}
+
+
 body {
 	font-family: Open Sans;
+	font-size: var(--main-font);
+	color: var(--main-color);
 }
 
 .d-inline-b {
@@ -70,9 +79,6 @@ ul, html, body {
 	background-color: #f7f7f7;
 }
 
-.fz-14-px {
-	font-size: 14px;
-}
 
 /* Header */
 
@@ -102,7 +108,7 @@ header {
 	left: 0;
 	top: 0;
 	right: 0;
-	height: 50px;
+	height: var(--header-height);
 	padding-left: 1%;
 	padding-right: 1%;
 }
@@ -110,14 +116,17 @@ header {
 /* Sections */
 
 main {
-	margin-top: 50px;
+	margin-top: var(--header-height);
 }
 
 .bl {
 	background-image: url(../images/banner.png);
-	height: 325px;
 	background-position: center center;
 	background-repeat: no-repeat;
+}
+
+.reservation {
+	margin-bottom: 10px;
 }
 
 .bl img {
@@ -159,9 +168,12 @@ h1 {
 }
 
 .section-img {
-	height: 210px;
+	width: 30%;
 }
 
+.section-img img {
+	width: 100%;
+}
 .section-wrapper, .footer-wrapper {
 	width: 1000px;
 	margin: 0 auto;
@@ -234,3 +246,4 @@ h1 {
 .footer-menu ul {
 	padding-left: 30px;
 }
+
